@@ -58,6 +58,9 @@
     <Analyzer Include="C:\Program Files\Unity\2022.3.5f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Pickable\PickableType.cs" />
+    <Compile Include="Assets\Pickable\Pickable.cs" />
+    <Compile Include="Assets\Pickable\PickableManager.cs" />
     <Compile Include="Assets\Player\Player.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -703,6 +706,10 @@
       <Project>{8459F0B3-63E0-33B5-2DE1-CDDAAFCE830C}</Project>
       <Name>Unity.EditorCoroutines.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="com.unity.cinemachine.editor.csproj">
+      <Project>{BC2B9EA6-E036-B543-4A3D-66264E2DDCEC}</Project>
+      <Name>com.unity.cinemachine.editor</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.PlasticSCM.Editor.csproj">
       <Project>{6E040478-9D76-121F-C72F-0BD2D90E2C2C}</Project>
       <Name>Unity.PlasticSCM.Editor</Name>
@@ -751,13 +758,13 @@
       <Project>{2258143F-F3F0-2D37-622D-4CA104154A40}</Project>
       <Name>Unity.Timeline</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.ProBuilder.Editor.csproj">
-      <Project>{E7AD44F5-91F1-7125-D865-C3FD2B1ED548}</Project>
-      <Name>Unity.ProBuilder.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.csproj">
       <Project>{E9BDF597-5651-B1EF-7066-E520A77B4ABF}</Project>
       <Name>Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.ProBuilder.Editor.csproj">
+      <Project>{E7AD44F5-91F1-7125-D865-C3FD2B1ED548}</Project>
+      <Name>Unity.ProBuilder.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.SettingsProvider.Editor.csproj">
       <Project>{76A6731A-D3A1-C395-FF4E-08F70D34D6BF}</Project>
@@ -798,6 +805,10 @@
     <ProjectReference Include="Unity.VSCode.Editor.csproj">
       <Project>{06A6ADA5-5944-6236-EF14-CB24B3DD1488}</Project>
       <Name>Unity.VSCode.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Cinemachine.csproj">
+      <Project>{D0511D26-4CD9-7C35-2740-EB4AFF6896B7}</Project>
+      <Name>Cinemachine</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

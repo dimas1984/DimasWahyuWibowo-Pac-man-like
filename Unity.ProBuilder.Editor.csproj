@@ -99,8 +99,8 @@
     <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Editor\EditorCore\MaterialEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Editor\EditorCore\ProBuilderEditorShortcuts.cs" />
     <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Editor\EditorCore\EditorSceneViewPicker.cs" />
-    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Editor\EditorCore\VertexManipulationToolSettings.cs" />
     <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Editor\MenuActions\Geometry\ExtrudeEdges.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Editor\EditorCore\VertexManipulationToolSettings.cs" />
     <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Editor\EditorCore\VertexManipulationTool.cs" />
     <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Editor\MenuActions\Geometry\OffsetElements.cs" />
     <Compile Include="Library\PackageCache\com.unity.probuilder@5.1.1\Editor\MenuActions\Geometry\SmartSubdivide.cs" />
