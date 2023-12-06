@@ -24,6 +24,7 @@ public class Player : MonoBehaviour
     // [SerializeField] Coroutine _powerupCoroutine;
     private Coroutine _powerupCoroutine;
     private bool _isPowerUpActive = false;
+    //private bool _isPowerUpActive;
 
 
     public void Dead() 

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PatrolState :  BaseState
@@ -10,7 +11,12 @@ public class PatrolState :  BaseState
     {
         //Debug.Log("start patrol");
         _isMoving = false;
-       enemy.Animator.SetTrigger("PatrolState");
+        if(enemy.Animator != null) 
+        {
+            enemy.Animator.SetTrigger("PatrolState");
+        }
+       
+       //enemy.Animator.SetTrigger("PatrolState");
        
         
     }
@@ -34,7 +40,7 @@ public class PatrolState :  BaseState
         }
         else
         {
-            if (Vector3.Distance(_destination, enemy.transform.position) <= 1) 
+            if (Vector3.Distance(_destination, enemy.transform.position) <= 0.1) 
             { 
                 _isMoving=false;
                 //Debug.Log("patrolingku");
