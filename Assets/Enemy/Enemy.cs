@@ -29,6 +29,11 @@ public class Enemy : MonoBehaviour
         _currentstate.EnterState(this);
     }
 
+    public void Dead() 
+    {
+        Destroy(gameObject);
+    }
+
     private void Awake()
     {
         Animator = GetComponent<Animator>();
@@ -63,5 +68,16 @@ public class Enemy : MonoBehaviour
     private void StopRetreating()
     {
         SwitchState(PatrolState);
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (_currentstate != RetreatState)
+        {
+            if (collision.gameObject.CompareTag("Player"))
+            {
+                collision.gameObject.GetComponent<Player>().Dead();
+            }
+        }
     }
 }
