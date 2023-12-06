@@ -20,7 +20,7 @@ public class PickableManager : MonoBehaviour
             _picablelist.Add(pickablesObjects[i]);
             pickablesObjects[i].OnPicked += OnPickaclePicked;
         }
-        // Debug.Log("Pickable List:"+ _picablelist.Count);
+        Debug.Log("Pickable List:"+ _picablelist.Count);
     }
 
     private void OnPickaclePicked(Pickable pickable) 
@@ -32,7 +32,7 @@ public class PickableManager : MonoBehaviour
             _player?.PickPowerUp();
         }
 
-       // Debug.Log("Pickable List:" + _picablelist.Count);
+       Debug.Log("Pickable List:" + _picablelist.Count);
         if (_picablelist.Count <= 0) 
         {
             Debug.Log("win");
