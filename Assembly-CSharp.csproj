@@ -60,6 +60,7 @@
   <ItemGroup>
     <Compile Include="Assets\Enemy\Enemy.cs" />
     <Compile Include="Assets\Score\ScoreManager.cs" />
+    <Compile Include="Assets\MainMenu\MainMenuManager.cs" />
     <Compile Include="Assets\Pickable\PickableType.cs" />
     <Compile Include="Assets\Enemy\RetreatState.cs" />
     <Compile Include="Assets\Pickable\Pickable.cs" />
@@ -67,6 +68,7 @@
     <Compile Include="Assets\Pickable\PickableManager.cs" />
     <Compile Include="Assets\Player\Player.cs" />
     <Compile Include="Assets\Enemy\BaseState.cs" />
+    <Compile Include="Assets\GameOver\GameOverManager.cs" />
     <Compile Include="Assets\Enemy\ChaseState.cs" />
   </ItemGroup>
   <ItemGroup>
