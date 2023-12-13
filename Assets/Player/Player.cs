@@ -1,7 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Presets;
+//using UnityEditor.Presets;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
@@ -18,7 +18,6 @@ public class Player : MonoBehaviour
     [SerializeField] private int _health;
     [SerializeField] private Transform _respwanPoint;
     [SerializeField] private TMP_Text _healthText;
-
 
     private Rigidbody _rigidbody;
     // [SerializeField] Coroutine _powerupCoroutine;
